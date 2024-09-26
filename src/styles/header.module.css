@@ -1,0 +1,60 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background-color: white;
+    height: 60px;
+    /* Высота хедера */
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.logo img {
+    width: 110px;
+    /* Размер логотипа */
+}
+
+.navigate {
+    display: flex;
+    height: 52px;
+    gap: 35px;
+}
+
+.navigate a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.navlink {
+    line-height: 3.5em;
+}
+
+.icons {
+    display: flex;
+    gap: 12px;
+}
+
+.icons img {
+    width: 24px;
+    /* Размер иконок */
+    height: 24px;
+}
+
+.flipped {
+    transform: scaleX(-1);
+}
+
+.profilePic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-left: 2px;
+    /* Аватарка будет обрезана по кругу */
+}
