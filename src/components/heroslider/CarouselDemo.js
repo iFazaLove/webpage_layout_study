@@ -20,7 +20,7 @@ export default function CarouselDemo() {
           backgroundColor: "gray",
           borderRadius: "50%", // Круглые индикаторы
           opacity: 1, // Убедимся, что индикаторы полностью видимы
-          "&[data-active]": {
+          "&[dataActive]": {
             backgroundColor: "yellow",
           },
           margin: "0 5px", // Добавим отступы между индикаторами

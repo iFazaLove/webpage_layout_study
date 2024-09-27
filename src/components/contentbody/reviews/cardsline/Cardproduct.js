@@ -1,14 +1,20 @@
-import styles from "@styles/content.module.css";
+import styles from "@styles/reviews.module.css";
 export default function Cardproduct({ image, color }) {
   return (
     <div
       className={styles.cardproduct}
       style={{
-        background: `linear-gradient(to bottom, ${color} 10%, rgba(255, 255, 255, 0))`,
+        background: `linear-gradient(${color} 5% 20%, rgba(255, 255, 255, 1.0)) 5% 90%`,
       }}
     >
       <div className={styles.image}>
         <img src={image.src} alt={image.alt} />
+        <div className={styles.iconheart}>
+          <img src="/images/reviews/icon-heart.svg" alt="Like" />
+        </div>
+        <div className={styles.label} style={{
+          background: image?.bgclabel
+        }}>{image.label}</div>
       </div>
       <div className={styles.bottom}>
         <div className={styles.rates}>

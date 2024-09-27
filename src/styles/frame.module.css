@@ -1,0 +1,68 @@
+.bottominfo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.title h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+.frametext {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 8px;
+}
+
+.text p {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(92, 95, 102, 1);
+}
+
+.frame {
+    width: 674px;
+    position: relative;
+    height: 100%;
+    min-width: 50%;
+    object-fit: cover;
+    background: rgba(252, 206, 71, 1);
+    aspect-ratio: 16/9;
+}
+
+.frame img {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1.5);
+    align-self: center;
+    object-fit: cover;
+}
+
+.polygon {
+    width: 77px;
+    height: 77px;
+    top: calc(50% + 5px);
+    left: calc(50% + 4px);
+}
+
+.logo {
+    top: 50%;
+    left: 50%;
+}

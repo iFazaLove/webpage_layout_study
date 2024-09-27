@@ -1,11 +1,11 @@
-import styles from "@styles/content.module.css";
+import styles from "@styles/reviews.module.css";
 
-export default function Title() {
+export default function Title({title, description}) {
   return (
     <div className={styles.title}>
       <div className={styles.text}>
-        <h4>Популярные рекламники</h4>
-        <p>Обзоры отелей с наивысшими рейтингами</p>
+        <h4>{title}</h4>
+        <p>{description}</p>
       </div>
       <button className={styles.button}>Cмотреть все</button>
     </div>

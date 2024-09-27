@@ -1,0 +1,208 @@
+.reviews {
+    display: flex;
+    row-gap: 24px;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title button {
+    margin-right: 16px;
+    display: inline-block;
+    align-self: flex-end;
+    height: 40px;
+    padding: 10px 20px;
+    /* Отступы внутри кнопки */
+    border: 2px solid rgba(23, 149, 168, 1.0);
+    background-color: transparent;
+    /* Прозрачный фон */
+    color: rgba(23, 149, 168, 1.0);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.title button:hover {
+    background-color: #e0f7fa;
+    /* Цвет фона при наведении */
+    text-decoration: underline;
+}
+
+.text {
+    padding-right: 8px;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text h4 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5C5F66;
+}
+
+.cardslines {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: stretch;
+    /* Растягивает все карточки по одинаковой высоте */
+}
+
+.cardproduct {
+    max-height: 336px;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 12px;
+    flex: 1 1 calc(33.33% - 16px);
+    /* Каждая карточка будет занимать треть от ширины родителя */
+    max-width: calc(33.33% - 16px);
+    /* Ограничить максимальную ширину карточки */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    aspect-ratio: 16/9;
+}
+
+.iconheart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(21, 26, 36, 0.4);
+    padding: 4px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconheart img {
+    width: 18px;
+    height: 18px;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 224, 134, 0.8);
+    color: rgba(45, 51, 62, 1);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.rates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.rate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rate p {
+    font-size: clamp(10px, 2vw, 18px);
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.rate img {
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    object-fit: cover;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.rating p {
+    font-size: clamp(8px, 2vw, 18px);
+    align-content: right;
+    color: rgba(92, 95, 102, 1);
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: #5C5F66 1px solid;
+    padding-right: 4px;
+}
+
+.number img {
+    width: 100%;
+    height: 12px;
+    object-fit: cover;
+}
+
+.number p {
+    font-size: clamp(12px, 2vw, 20px);
+    font-weight: 600;
+    color: black;
+    margin-left: 2px;
+}
+
+.names p {
+    font-weight: 700;
+    padding: 0 2px;
+    font-size: clamp(10px, 2vw, 18px);
+    line-height: 26px;
+}
+
+.icontext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icontext img {
+    top: 50%;
+    max-width: 20%;
+    height: auto;
+    max-height: 25px;
+    object-fit: cover;
+}
